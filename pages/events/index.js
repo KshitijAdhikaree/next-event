@@ -1,9 +1,13 @@
+import { getAllEvents } from "@/dummyData"
+import EventList from "@/components/events/eventList"
 
 
 function AllEventsPage() {
+
+  const events = getAllEvents()
   return (
     <div>
-      <h1>All events</h1>
+      <EventList items={events}/>
     </div>
   )
 }
